@@ -8,9 +8,14 @@ require("dotenv").config();
 
 app.use(express.json());
 app.use(Cors());
+app.use((req,res,next)=>{
+    res.setHeader('Access-Control-Allow-Origin','*');
+    res.setHeader('Access-Control-Allow-Headers','*');
+    next();
+});
 app.use('/api/v1/details',details)
 
-const port = 5000;
+const port = 8000;
 
 const start = async () =>{
     try {
