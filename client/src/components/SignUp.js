@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import '../styles/Home.css';
+import '../styles/SignUp.css';
 
 const SignUp = () => {
     const [details,setDetails] = useState({
@@ -24,7 +24,7 @@ const SignUp = () => {
               src="https://assets4.lottiefiles.com/datafiles/XRVoUu3IX4sGWtiC3MPpFnJvZNq7lVWDCa8LSqgS/profile.json"
               background="transparent"
               speed="1"
-              style={{justifyContent: "center",margin:"auto",width:'180px'}}
+              style={{justifyContent: "center",margin:"auto",width:'190px'}}
               loop
               autoplay
             ></lottie-player>
