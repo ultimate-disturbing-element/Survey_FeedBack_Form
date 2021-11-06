@@ -16,7 +16,7 @@ import {
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./App.css";
-import Survey from "./components/Survey";
+import SignUp from "./components/SignUp";
 import Home from "./components/Home";
 import Settings from "./components/Settings";
 
@@ -59,7 +59,7 @@ export class App extends Component {
               >
                 <Toggle />
                 <Nav defaultSelected={selected}>
-                  <NavItem eventKey="">
+                  <NavItem eventKey="home">
                     <NavIcon>
                       <i
                         className="fa fa-fw fa-home"
@@ -68,14 +68,14 @@ export class App extends Component {
                     </NavIcon>
                     <NavText>Home</NavText>
                   </NavItem>
-                  <NavItem eventKey="surveys">
+                  <NavItem eventKey="">
                     <NavIcon>
                       <i
                         className="fa fa-fw fa-user"
                         style={{ fontSize: "1.75em" }}
                       />
                     </NavIcon>
-                    <NavText>Surveys</NavText>
+                    <NavText>SignUp</NavText>
                   </NavItem>
                   <NavItem eventKey="settings"> 
                     <NavIcon>
@@ -98,9 +98,9 @@ export class App extends Component {
                 <Route
                   path="/"
                   exact
-                  component={Home}
+                  component={SignUp}
                 />
-                <Route path="/surveys" component={Survey}/>
+                <Route path="/home" component={Home}/>
                  
                
                 <Route path="/settings" component={Settings}/>
